@@ -1,0 +1,22 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Open+Sans:wght@300&display=swap");
+
+.index-page-container {
+  diplay: flex;
+  flex-direction: collum;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.index-page-content {
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.index-page-message_update {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 30px;
+}
