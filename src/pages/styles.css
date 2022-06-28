@@ -1,15 +1,16 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Shadows+Into+Light+Two&display=swap");
 
 .index-page-container {
   diplay: flex;
-  flex-direction: collum;
+  flex-direction: column-reverse;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 20px;
+  line-height: 40px;
+  color: #210542;
 }
 .index-page-content {
-  width: 400px;
+  width: 450px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -17,6 +18,22 @@
   transform: translate(-50%, -50%);
 }
 .index-page-message_update {
-  font-family: "Covered By Your Grace", cursive;
-  font-size: 30px;
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: bold;
+  font-size: 34px;
+  color: #6666ff;
+  letter-spacing: 15px;
+  padding-top: 10px;
+}
+.index-page-date {
+  color: #ffbf66;
+  font-weight: bold;
+}
+.index-page-link:visited {
+  color: #ffbf66;
+}
+.index-page-link:hover {
+  padding: 2px;
+  background-color: #6666ff;
+  color: #ffffff;
 }
