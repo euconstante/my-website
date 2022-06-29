@@ -4,7 +4,6 @@
 
 .index_page {
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
     "header header header"
     "main main main"
@@ -29,40 +28,34 @@
   grid-area: main;
   background-color: var(--gainsboro);
 }
-.page_main-content {
-  display: grid;
-}
-.page_main-about {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.page_main-about-container {
-  padding: 10rem;
-  /* margin-left: 40%; */
-  /* align-items: center; */
-}
-.page_main-about-content {
-  display: flex;
-  flex-direction: column;
 
-  justify-content: space-around;
+.page_main-about-container {
+  display: grid;
   align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50rem;
 }
+
+.page_main-about-content {
+  grid-column-start: 2;
+  text-align: center;
+}
+.page_main-about-text {
+  grid-column-start: 3;
+  width: 50%;
+}
+
 .page_main-about-logo {
+  width: 35.5rem;
   position: absolute;
-  margin-top: -18rem;
-  width: 40rem;
+  margin-top: -10rem;
+  margin-left: -8.5rem;
 }
 
 .page_main-about-figure {
-  width: 20rem;
-  margin-right: 2rem;
-  padding-botton: 10rem;
+  width: 19.9rem;
 }
-.page_main-about-text {
-  width: 30%;
-}
+
 .page_main-cool-about-container {
   background-color: var(--majorelle-blue);
 }
@@ -72,9 +65,7 @@
 .page_main-skills-container {
   background-color: var(--raisin-black);
 }
-/* .page_main-skills-content {
-  display: flex;
-} */
+
 .page_main-skills-logo {
   width: 3rem;
 }

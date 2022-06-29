@@ -35,32 +35,30 @@ const IndexPage = () => {
         />
       </header>
       <main className="page_main">
-        <article className="page_main-content">
+        <article className="page_main-grid">
           <section className="page_main-about-container">
-            <div className="page_main-about">
-              <div className="page_main-about-content">
-                <img
-                  src={LogoIconBlack}
-                  alt="Bianca Constante logo"
-                  className="page_main-about-logo"
-                />
-                <img
-                  src={AboutFigure}
-                  alt="Bianca Constante"
-                  className="page_main-about-figure"
-                />
-              </div>
-              <p className="page_main-about-text">
-                Vestibulum ac nunc ex. Nunc eu viverra orci. Proin ante elit,
-                lobortis sit amet quam in, efficitur laoreet massa. Etiam
-                eleifend tempor nisi ac hendrerit. Cras et dapibus sem. Nullam
-                id gravida arcu. Mauris tempus quis quam eu feugiat. Curabitur
-                ut euismod tortor. Donec ornare nisl purus, ut porta sem
-                tristique in. Maecenas fermentum condimentum nulla, vitae congue
-                enim malesuada nec. Donec vehicula consectetur lorem non mollis.
-                Ut placerat pulvinar leo.
-              </p>
+            <div className="page_main-about-content">
+              <img
+                src={LogoIconBlack}
+                alt="Bianca Constante logo"
+                className="page_main-about-logo"
+              />
+              <img
+                src={AboutFigure}
+                alt="Bianca Constante"
+                className="page_main-about-figure"
+              />
             </div>
+            <p className="page_main-about-text">
+              Vestibulum ac nunc ex. Nunc eu viverra orci. Proin ante elit,
+              lobortis sit amet quam in, efficitur laoreet massa. Etiam eleifend
+              tempor nisi ac hendrerit. Cras et dapibus sem. Nullam id gravida
+              arcu. Mauris tempus quis quam eu feugiat. Curabitur ut euismod
+              tortor. Donec ornare nisl purus, ut porta sem tristique in.
+              Maecenas fermentum condimentum nulla, vitae congue enim malesuada
+              nec. Donec vehicula consectetur lorem non mollis. Ut placerat
+              pulvinar leo.
+            </p>
           </section>
           <section className="page_main-cool-about-container">
             <img
