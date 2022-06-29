@@ -2,6 +2,7 @@ import * as React from "react";
 import LogoIcon from "../assets/icons/Logo_bithrasher_1.svg";
 import LogoIconBlack from "../assets/icons/Logo_bithrasher_1.2.svg";
 import LogoIconSimple from "../assets/icons/Logo_bithrasher_2.svg";
+import LogoIconWhite from "../assets/icons/Logo_bithrasher_2.1.svg";
 import AboutFigure from "../assets/images/Foto_bithrasher.png";
 import SquidGif from "../assets/images/giphy.gif";
 import JavaScriptLogo from "../assets/icons/javascript.svg";
@@ -62,12 +63,12 @@ const IndexPage = () => {
           </section>
           <section className="page_main-cool-about-container">
             <img
-              src={LogoIconSimple}
+              src={LogoIconWhite}
               alt="Bianca Constante logo"
               className="page_main-cool-logo"
             />
             <div className="page_main-cool-about-content">
-              <p>
+              <p className="page_main-cool-text">
                 Vestibulum ac nunc ex. Nunc eu viverra orci. Proin ante elit,
                 lobortis sit amet quam in, efficitur laoreet massa. Etiam
                 eleifend tempor nisi ac hendrerit. Cras et dapibus sem. Nullam

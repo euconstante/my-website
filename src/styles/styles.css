@@ -57,10 +57,25 @@
 }
 
 .page_main-cool-about-container {
+  display: flex;
+  color: #ffff;
+  min-height: 60rem;
+  padding-top: 5rem;
+  align-items: center;
+  flex-direction: column;
   background-color: var(--majorelle-blue);
 }
 .page_main-cool-about-content {
   display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  width: 60%;
+}
+.page_main-cool-text {
+  width: 50%;
+}
+.page_main-cool-logo {
+  width: 20rem;
 }
 .page_main-skills-container {
   background-color: var(--raisin-black);
