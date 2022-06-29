@@ -37,17 +37,19 @@ const IndexPage = () => {
       <main className="page_main">
         <article className="page_main-content">
           <section className="page_main-about-container">
-            <img
-              src={LogoIconBlack}
-              alt="Bianca Constante logo"
-              className="page_main-about-logo"
-            />
-            <div className="page_main-about-content">
-              <img
-                src={AboutFigure}
-                alt="Bianca Constante"
-                className="page_main-about-figure"
-              />
+            <div className="page_main-about">
+              <div className="page_main-about-content">
+                <img
+                  src={LogoIconBlack}
+                  alt="Bianca Constante logo"
+                  className="page_main-about-logo"
+                />
+                <img
+                  src={AboutFigure}
+                  alt="Bianca Constante"
+                  className="page_main-about-figure"
+                />
+              </div>
               <p className="page_main-about-text">
                 Vestibulum ac nunc ex. Nunc eu viverra orci. Proin ante elit,
                 lobortis sit amet quam in, efficitur laoreet massa. Etiam
