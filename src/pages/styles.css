@@ -37,3 +37,11 @@
   background-color: #6666ff;
   color: #ffffff;
 }
+
+.progress-icon {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  /* width: 500px;
+  height: 1000px; */
+}
