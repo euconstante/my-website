@@ -3,15 +3,16 @@ import LogoIcon from "../assets/icons/Logo_bithrasher_1.svg";
 import LogoIconBlack from "../assets/icons/Logo_bithrasher_1.2.svg";
 import LogoIconSimple from "../assets/icons/Logo_bithrasher_2.svg";
 import LogoIconWhite from "../assets/icons/Logo_bithrasher_2.1.svg";
+import LogoIconPurple from "../assets/icons/Logo_bithrasher_2.3.svg";
 import AboutFigure from "../assets/images/Foto_bithrasher.png";
 import SquidGif from "../assets/images/giphy.gif";
 import JavaScriptLogo from "../assets/icons/javascript.svg";
 import TypeScriptLogo from "../assets/icons/typescript.svg";
 import HtmlLogo from "../assets/icons/html.png";
 import CssLogo from "../assets/icons/css.png";
-import ReactLogo from "../assets/icons/react.svg";
-import ReduxLogo from "../assets/icons/redux.svg";
-import TailwindLogo from "../assets/icons/tailwind.svg";
+import ReactLogo from "../assets/icons/react.png";
+import ReduxLogo from "../assets/icons/redux.png";
+import TailwindLogo from "../assets/icons/tailwind.png";
 import "../styles/styles.css";
 
 const hardSkills = [
@@ -91,17 +92,24 @@ const IndexPage = () => {
               alt="Bianca Constante logo"
               className="page_main-cool-logo"
             />
-            <h2>Projects</h2>
-            <ul>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-              <li>Link 4</li>
-            </ul>
+            <div>
+              <h2>Projects</h2>
+              <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+              </ul>
+            </div>
           </section>
           <section className="page_main-skills-container">
+            <img
+              src={LogoIconPurple}
+              alt="Bianca Constante logo"
+              className="page_main-cool-logo"
+            />
+            <h3>Hard Skills</h3>
             <div className="page_main-skills-content">
-              <h3>Hard Skills</h3>
               {hardSkills.map((item) => {
                 return (
                   <img

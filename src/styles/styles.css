@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   background-color: var(--raisin-black);
-  max-height: 62rem;
+  min-height: 50rem;
 }
 
 .page_header-logo {
@@ -59,7 +59,7 @@
 .page_main-cool-about-container {
   display: flex;
   color: #ffff;
-  min-height: 60rem;
+  min-height: 50rem;
   padding-top: 5rem;
   align-items: center;
   flex-direction: column;
@@ -77,12 +77,29 @@
 .page_main-cool-logo {
   width: 20rem;
 }
-.page_main-skills-container {
-  background-color: var(--raisin-black);
+.page_main-content-projects {
+  display: flex;
+  flex-direction: column;
+  min-height: 50rem;
+  align-items: center;
 }
-
+.page_main-skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  min-height: 50rem;
+  background-color: var(--raisin-black);
+  font-size: 4rem;
+}
+.page_main-skills-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  width: 50%;
+}
 .page_main-skills-logo {
-  width: 3rem;
+  width: 5rem;
 }
 .page_footer {
   grid-area: footer;
