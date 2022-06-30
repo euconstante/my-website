@@ -16,11 +16,31 @@
 .page_header {
   grid-area: header;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--raisin-black);
   min-height: 50rem;
 }
+.page_header-nav {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+  color: var(--majorelle-blue);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.page_header-nav-links:link,
+.page_header-nav-links:visited {
+  text-decoration: none;
+  color: var(--majorelle-blue);
+}
 
+.page_header-nav-links:hover {
+  color: white;
+}
 .page_header-logo {
   width: 65%;
 }
@@ -59,7 +79,7 @@
 .page_main-cool-about-container {
   display: flex;
   color: #ffff;
-  min-height: 50rem;
+  min-height: 60rem;
   padding-top: 5rem;
   align-items: center;
   flex-direction: column;
@@ -67,12 +87,25 @@
 }
 .page_main-cool-about-content {
   display: flex;
-  justify-content: space-between;
-  margin-top: 5rem;
-  width: 60%;
+  padding-top: 15rem;
+  width: 80%;
 }
 .page_main-cool-text {
-  width: 50%;
+  width: 30%;
+  margin-right: 5rem;
+}
+.page_main-cool-figures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page_main-cool-selection {
+  position: absolute;
+  margin-left: 10rem;
+  width: 38rem;
+}
+.page_main-squid-gif {
+  width: 20rem;
 }
 .page_main-cool-logo {
   width: 20rem;
@@ -81,12 +114,23 @@
   display: flex;
   flex-direction: column;
   min-height: 50rem;
+  padding-top: 5rem;
   align-items: center;
+  font-size: 2rem;
+}
+.page_main-projects-title {
+  font-size: 4rem;
+  padding-button: 6rem;
+}
+
+.list_bullet-icon {
+  width: 5rem;
 }
 .page_main-skills-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5rem;
   color: white;
   min-height: 50rem;
   background-color: var(--raisin-black);
@@ -96,11 +140,105 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 5rem;
-  width: 50%;
+  width: 80%;
 }
 .page_main-skills-logo {
-  width: 5rem;
+  width: 7rem;
+}
+.page_main-skills-content--mobile {
+  display: none;
 }
 .page_footer {
   grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  min-height: 8rem;
+  flex-direction: column;
+  align-items: center;
+}
+.page_footer-links {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.footer-contact-link:link {
+  color: var(--majorelle-blue);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.footer-contact-link:hover {
+  color: white;
+  padding: 0.3rem;
+  background-color: var(--majorelle-blue);
+}
+
+@media (max-width: 950px) {
+  .index_page {
+    grid-template-areas:
+      "header"
+      "main"
+      "main"
+      "main"
+      "main"
+      "footer";
+  }
+  .page_header-logo {
+    width: 80%;
+  }
+  .page_main-about-container {
+    min-height: 60rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .page_main-about-logo {
+    width: 30.5rem;
+    position: absolute;
+    margin-top: -9.2rem;
+    margin-left: -5.5rem;
+  }
+  .page_main-cool-about-containter {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .page_main-cool-about-content {
+    flex-direction: column;
+    padding-top: 5rem;
+    text-align: center;
+  }
+  .page_main-cool-text {
+    padding-bottom: 10rem;
+    width: 100%;
+  }
+
+  .page_main-cool-selection {
+    width: 20rem;
+  }
+  .page_main-squid-gif {
+    width: 15rem;
+  }
+  .page_main-skills-logo {
+    width: 4rem;
+  }
+}
+@media (max-width: 600px) {
+  .page_main-skills-content {
+    display: none;
+  }
+  .page_main-skills-content--mobile {
+    display: flex;
+    width: 50%;
+    padding-top: 2rem;
+    justify-content: center;
+  }
+  .page_main-skills-logo {
+    width: 5rem;
+    margin-left: 2rem;
+  }
 }

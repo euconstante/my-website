@@ -1,5 +1,6 @@
 html,
-body {
+body,
+ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,4 +8,8 @@ body {
   font-family: inherit;
   vertical-align: baseline;
   height: 100%;
+}
+li {
+  display: flex;
+  align-items: center;
 }
