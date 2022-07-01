@@ -12,9 +12,10 @@ import JavaScriptLogo from "../assets/icons/javascript.svg";
 import TypeScriptLogo from "../assets/icons/typescript.svg";
 import HtmlLogo from "../assets/icons/html.png";
 import CssLogo from "../assets/icons/css.png";
-import ReactLogo from "../assets/icons/react.png";
-import ReduxLogo from "../assets/icons/redux.png";
-import TailwindLogo from "../assets/icons/tailwind.png";
+import ReactLogo from "../assets/icons/react.svg";
+import ReduxLogo from "../assets/icons/redux.svg";
+
+import Card from "../components/card";
 import "../styles/styles.css";
 
 const hardSkills = [
@@ -24,14 +25,12 @@ const hardSkills = [
   CssLogo,
   ReactLogo,
   ReduxLogo,
-  TailwindLogo,
 ];
+
 const projectsList = [
-  " Vestibulum ac nunc ex",
-  " Vestibulum ac nunc ex",
-  " Vestibulum ac nunc ex",
-  " Vestibulum ac nunc ex",
-  " Vestibulum ac nunc ex",
+  { icon: BulletIcon, title: "Refera", description: "bla bla bla bla" },
+  { icon: BulletIcon, title: "AngelUS", description: "bla bla bla bla" },
+  { icon: BulletIcon, title: "Trybe", description: "bla bla bla bla" },
 ];
 
 const IndexPage = () => {
@@ -75,14 +74,11 @@ const IndexPage = () => {
               />
             </div>
             <p className="page_main-about-text">
-              Vestibulum ac nunc ex. Nunc eu viverra orci. Proin ante elit,
-              lobortis sit amet quam in, efficitur laoreet massa. Etiam eleifend
-              tempor nisi ac hendrerit. Cras et dapibus sem. Nullam id gravida
-              arcu. Mauris tempus quis quam eu feugiat. Curabitur ut euismod
-              tortor. Donec ornare nisl purus, ut porta sem tristique in.
-              Maecenas fermentum condimentum nulla, vitae congue enim malesuada
-              nec. Donec vehicula consectetur lorem non mollis. Ut placerat
-              pulvinar leo.
+              Front end developer and Materials engineer based in Brazil.
+              Motivated by new challenges, curiosity,criativity and connections.
+              Value the diversity, commitment and respect. Play as a team
+              understanding that people are different. I am currently working as
+              a Front end Developer at Trybe, Belo Horizonte, Brazil.
             </p>
           </section>
           <section className="page_main-cool-about-container">
@@ -93,14 +89,10 @@ const IndexPage = () => {
             />
             <div className="page_main-cool-about-content">
               <p className="page_main-cool-text">
-                Vestibulum ac nunc ex. Nunc eu viverra orci. Proin ante elit,
-                lobortis sit amet quam in, efficitur laoreet massa. Etiam
-                eleifend tempor nisi ac hendrerit. Cras et dapibus sem. Nullam
-                id gravida arcu. Mauris tempus quis quam eu feugiat. Curabitur
-                ut euismod tortor. Donec ornare nisl purus, ut porta sem
-                tristique in. Maecenas fermentum condimentum nulla, vitae congue
-                enim malesuada nec. Donec vehicula consectetur lorem non mollis.
-                Ut placerat pulvinar leo.
+                Heavily inspired by national rap and on my spare time I dance
+                some braking and Hip hop when. My favorite TV shows types are
+                comedies and criminal investigations. Some fun facts: I play
+                clarinet, draw some realistc stuff and I used to make glasses.{" "}
               </p>
               <div className="page_main-cool-figures">
                 <img
@@ -123,16 +115,17 @@ const IndexPage = () => {
               className="page_main-cool-logo"
             />
             <h2 className="page_main-projects-title">Projects</h2>
-            <ul className="page_main-projects-list">
+            <div className="page_main-projects-list">
               {projectsList.map((item) => {
                 return (
-                  <li clasName="projects_list-items">
-                    <img src={BulletIcon} className="list_bullet-icon" />
-                    {item}
-                  </li>
+                  <Card
+                    icon={item.icon}
+                    title={item.title}
+                    description={item.description}
+                  />
                 );
               })}
-            </ul>
+            </div>
           </section>
           <section id="skills" className="page_main-skills-container">
             <img

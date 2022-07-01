@@ -1,0 +1,17 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(98, 60, 234, 0.6);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+.card-title {
+  font-size: 1.5rem;
+}
+.card-description {
+  font-size: 1.2rem;
+}
+.card-icon {
+  width: 4rem;
+}

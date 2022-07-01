@@ -123,8 +123,8 @@
   padding-button: 6rem;
 }
 
-.list_bullet-icon {
-  width: 5rem;
+.page_main-projects-list {
+  display: flex;
 }
 .page_main-skills-container {
   display: flex;
