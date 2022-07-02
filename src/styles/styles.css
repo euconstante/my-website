@@ -26,10 +26,10 @@
   background-color: rgba(0, 0, 0, 0.1);
   justify-content: space-around;
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   align-items: center;
   color: var(--majorelle-blue);
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 2rem;
 }
 .page_header-nav-links:link,
@@ -42,16 +42,20 @@
   color: white;
 }
 .page_header-logo {
+  padding-top: 5rem;
   width: 65%;
 }
 .page_main {
   grid-area: main;
   background-color: var(--gainsboro);
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
 }
 
 .page_main-about-container {
   display: grid;
   align-items: center;
+  padding-top: 5rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 50rem;
 }
@@ -62,9 +66,12 @@
 }
 .page_main-about-text {
   grid-column-start: 3;
-  width: 50%;
+  width: 70%;
+  line-height: 2rem;
 }
-
+.text--bold {
+  font-weight: bold;
+}
 .page_main-about-logo {
   width: 35.5rem;
   position: absolute;
@@ -93,6 +100,7 @@
 .page_main-cool-text {
   width: 30%;
   margin-right: 5rem;
+  line-height: 2rem;
 }
 .page_main-cool-figures {
   display: flex;
@@ -113,7 +121,7 @@
 .page_main-content-projects {
   display: flex;
   flex-direction: column;
-  min-height: 50rem;
+  min-height: 60rem;
   padding-top: 5rem;
   align-items: center;
   font-size: 2rem;
@@ -151,28 +159,37 @@
 .page_footer {
   grid-area: footer;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: space-around;
   min-height: 8rem;
   flex-direction: column;
   align-items: center;
+  font-size: 1rem;
+  color: var(--gainsboro);
+  letter-spacing: 0.05rem;
 }
 .page_footer-links {
-  width: 15%;
+  width: 25rem;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 .footer-contact-link:link {
-  color: var(--majorelle-blue);
+  color: white;
   font-size: 1.5rem;
   text-decoration: none;
 }
 .footer-contact-link:hover {
-  color: white;
   padding: 0.3rem;
   background-color: var(--majorelle-blue);
 }
-
+.footer-contact-link:visited,
+.contact-link:visited {
+  color: white;
+}
+.contact-link:link {
+  color: white;
+}
 @media (max-width: 950px) {
   .index_page {
     grid-template-areas:
@@ -226,8 +243,16 @@
   .page_main-skills-logo {
     width: 4rem;
   }
+  .page_main-projects-list {
+    flex-direction: column;
+  }
 }
-@media (max-width: 600px) {
+@media (max-width: 550px) {
+  .page_main-about-logo {
+    width: 25rem;
+    margin-top: -7.2rem;
+    margin-left: -3rem;
+  }
   .page_main-skills-content {
     display: none;
   }
@@ -240,5 +265,17 @@
   .page_main-skills-logo {
     width: 5rem;
     margin-left: 2rem;
+  }
+  .page_main-cool-selection {
+    width: 50%;
+  }
+  .page_main-squid-gif {
+    width: 50%;
+  }
+
+  .page_footer-links,
+  .footer_text {
+    text-align: center;
+    width: 20rem;
   }
 }

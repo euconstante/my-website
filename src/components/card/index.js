@@ -2,13 +2,15 @@ import * as React from "react";
 
 import "./styles.css";
 
-const Card = ({ icon, image, title, description }) => {
+const Card = ({ image, description, link }) => {
   return (
     <div className="card-container">
-      <img className="card-icon" src={icon} />
-      <img className="card-description" src={image} />
-      <h1 className="card-title">{title}</h1>
-      <p className="card-description">{description}</p>
+      <a href={link} target="_blank">
+        <div>
+          <img className="card-image" src={image} />
+          <p className="card-description">{description}</p>
+        </div>
+      </a>
     </div>
   );
 };

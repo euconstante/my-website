@@ -4,7 +4,6 @@ import LogoIconBlack from "../assets/icons/Logo_bithrasher_1.2.svg";
 import LogoIconSimple from "../assets/icons/Logo_bithrasher_2.svg";
 import LogoIconWhite from "../assets/icons/Logo_bithrasher_2.1.svg";
 import LogoIconPurple from "../assets/icons/Logo_bithrasher_2.3.svg";
-import BulletIcon from "../assets/icons/Logo_bithrasher_3.svg";
 import AboutFigure from "../assets/images/Foto_bithrasher.png";
 import AboutColab from "../assets/images/colab.png";
 import SquidGif from "../assets/images/giphy.gif";
@@ -14,6 +13,9 @@ import HtmlLogo from "../assets/icons/html.png";
 import CssLogo from "../assets/icons/css.png";
 import ReactLogo from "../assets/icons/react.svg";
 import ReduxLogo from "../assets/icons/redux.svg";
+import ReferaLogo from "../assets/images/refera.png";
+import AngelUS from "../assets/images/angelus.png";
+import Trybe from "../assets/images/trybe.png";
 
 import Card from "../components/card";
 import "../styles/styles.css";
@@ -28,16 +30,29 @@ const hardSkills = [
 ];
 
 const projectsList = [
-  { icon: BulletIcon, title: "Refera", description: "bla bla bla bla" },
-  { icon: BulletIcon, title: "AngelUS", description: "bla bla bla bla" },
-  { icon: BulletIcon, title: "Trybe", description: "bla bla bla bla" },
+  {
+    image: ReferaLogo,
+    description: `Refera is a company that operates in real estate market connecting agents and service providers. I worked as part of JungleDevs team developing new features, fixing bugs and helping in the continuous improvement of the product.`,
+    link: "https://refera.com.br/",
+  },
+  {
+    image: AngelUS,
+    description: `AngelUS is a company that helps women become more engaged in their professional careers.I worked as part of JungleDevs team developing new features, fixing bugs and helping in the continuous improvement of the product.`,
+    link: "https://www.angelus.network/",
+  },
+  {
+    image: Trybe,
+    description:
+      "Trybe is a web development school with the genuine purpose of generating more opportunities for people. I'm currently working here with the development web team building new features, tests, fixing bugs and actively participating in Squad agile ceremonies.",
+    link: "https://www.betrybe.com/",
+  },
 ];
 
 const IndexPage = () => {
   return (
     <div className="index_page">
-      <header className="page_header">
-        <title>Bianca Constante portifolio</title>
+      <header id="home" className="page_header">
+        <title>Bianca Constante</title>
         <nav className="page_header-nav">
           <a href="#about" className="page_header-nav-links">
             ABOUT
@@ -75,10 +90,11 @@ const IndexPage = () => {
             </div>
             <p className="page_main-about-text">
               Front end developer and Materials engineer based in Brazil.
-              Motivated by new challenges, curiosity,criativity and connections.
-              Value the diversity, commitment and respect. Play as a team
-              understanding that people are different. I am currently working as
-              a Front end Developer at Trybe, Belo Horizonte, Brazil.
+              Motivated by new challenges, curiosity, criativity and
+              connections. Value diversity, commitment and respect. Play as a
+              team understanding that people are different. <br />
+              <br />I am currently working as a Front end Developer at{" "}
+              <span className="text--bold">Trybe, Belo Horizonte, Brazil.</span>
             </p>
           </section>
           <section className="page_main-cool-about-container">
@@ -89,9 +105,11 @@ const IndexPage = () => {
             />
             <div className="page_main-cool-about-content">
               <p className="page_main-cool-text">
-                Heavily inspired by national rap and on my spare time I dance
-                some braking and Hip hop when. My favorite TV shows types are
-                comedies and criminal investigations. Some fun facts: I play
+                Heavily inspired by Brazilian music and in my spare time I dance
+                some Breaking and Hip hop. My favorite TV shows types are
+                comedies and criminal investigations. <br />
+                <br />
+                <span className="text--bold">Some fun facts:</span> I play
                 clarinet, draw some realistc stuff and I used to make glasses.{" "}
               </p>
               <div className="page_main-cool-figures">
@@ -119,8 +137,8 @@ const IndexPage = () => {
               {projectsList.map((item) => {
                 return (
                   <Card
-                    icon={item.icon}
-                    title={item.title}
+                    image={item.image}
+                    link={item.link}
                     description={item.description}
                   />
                 );
@@ -171,7 +189,6 @@ const IndexPage = () => {
         </article>
       </main>
       <footer id="contact" className="page_footer">
-        <p>Developed by Bianca Constante. Designed by Rodrigo Neves</p>
         <div className="page_footer-links">
           <a
             href="https://www.linkedin.com/in/biancaguedert/"
@@ -187,7 +204,29 @@ const IndexPage = () => {
           >
             GitHub
           </a>
+          <a
+            href="mailto:constanteguedert@gmail.com"
+            target="_blank"
+            className="footer-contact-link"
+          >
+            E-mail
+          </a>
         </div>
+        <p className="footer_text">
+          Developed by{" "}
+          <a className="contact-link" href="#home">
+            Bianca Constante
+          </a>
+          . Designed by{" "}
+          <a
+            className="contact-link"
+            href="https://rodrigoneves.myportfolio.com/"
+            target="_blank"
+          >
+            Rodrigo Neves
+          </a>
+          .
+        </p>
       </footer>
     </div>
   );
